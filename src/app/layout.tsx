@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <Script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" strategy='beforeInteractive'></Script>
       <Script src="https://raw.githubusercontent.com/aptorres27/Random-constellations-particle.js-stars-background/master/particle.min.js" strategy='beforeInteractive'></Script>
-      <body className={cn(poppins.className, 'container mx-auto px-20 lg:px-60')}>
+      <body className={cn(poppins.className, 'container px-20 lg:px-30')}>
         {children}
       </body>
     </html>

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Button } from './ui/button';
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 export default function Navbar() {  
     const [showMenu, setShowMenu] = useState(false);
     
@@ -29,17 +30,21 @@ export default function Navbar() {
 function NavList() {
     return <>
         <li>
+            <Button variant={'link'} className='text-xl hover:text-blue-400 link-nav' asChild>
+                <Link href='#about'>About</Link>
+            </Button>
+        </li>
+         <li>
+            <Button variant={'link'} asChild className='text-xl hover:text-blue-400'>
+                <Link href='#experience'>Experience</Link>
+            </Button>
+        </li>
+        {/*<li>
             <Button variant={'link'} className='text-xl hover:text-blue-400'>About</Button>
         </li>
         <li>
             <Button variant={'link'} className='text-xl hover:text-blue-400'>About</Button>
-        </li>
-        <li>
-            <Button variant={'link'} className='text-xl hover:text-blue-400'>About</Button>
-        </li>
-        <li>
-            <Button variant={'link'} className='text-xl hover:text-blue-400'>About</Button>
-        </li>
+        </li> */}
     
     </>
 }
