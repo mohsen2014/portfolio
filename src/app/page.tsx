@@ -22,7 +22,7 @@ export default function Home() {
       <div className='w-full'>
           <div className='min-h-[550px] md:min-w-[1000px] w-full'>
               <div className='h-[400] w-full md:justify-around md:flex-row flex flex-col items-center gap-20 '>
-                <Image  src="/me.jpg" className='rounded-full w-[400px] h-[400px] object-cover' width={400} height={400} alt='mohsen emami'></Image>
+                <Image  src="/portfolio/me.jpg" className='rounded-full w-[400px] h-[400px] object-cover' width={400} height={400} alt='mohsen emami'></Image>
                 <div className="flex flex-col gap-3 items-start justify-center h-full">
                   <MeshGB/>
                   <div className='text-sm text-gray-900'>Hello, I`m</div> 
