@@ -43,7 +43,7 @@ export default function Home() {
               </div>
           </div>
           <Section description='Get To Know More' title="about me" id='about'>
-            <div className='grid grid-cols-3 grid-rows-2 gap-5 w-full'>
+            <div className='grid lg:grid-cols-3 grid-cols-1 lg:grid-rows-2 grid-rows-1 gap-5 w-full'>
               <div className='row-span-2 text-gray-800 pr-3'>
                 <p>
                   As a Front-End Developer with
@@ -105,7 +105,7 @@ export default function Home() {
             </div>
           </Section>
           <Section description='Explore My' title="Experience" id='experience'>
-            <div className='grid grid-cols-2 gap-5 w-full'>
+            <div className='grid lg:grid-cols-2 grid-cols-1 gap-5 w-full'>
             <ExperienceCard position='Front-End developer'  title='Playtime Solutions' years={4} type="remote">
               <div className='flex items-center justify-between p-2'>
                 <p className='h-50'>
