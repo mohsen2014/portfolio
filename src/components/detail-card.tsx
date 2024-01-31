@@ -9,14 +9,14 @@ function DetailCard({Icon, title, children, onHover}:{
     onHover?: Dispatch<SetStateAction<boolean>>
 }) {
   return (
-    <Card className='w-full border-gray-300 hover:border-gray-400 hover:bg-gray-100' onMouseEnter={() => onHover && onHover(true)} onMouseLeave={() => onHover && onHover(false)}>
-        <CardHeader>
+    <Card className='w-full border-gray-300 hover:border-gray-400 hover:bg-gray-100 p-2 md:p-6 h-[100%]' onMouseEnter={() => onHover && onHover(true)} onMouseLeave={() => onHover && onHover(false)}>
+        <CardHeader className='p-2 md:p-6'>
             <CardTitle className='flex capitalize'>
                 {Icon && <Icon/>}
                 {title} 
             </CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className='p-2 md:p-6'>
             {children}
         </CardContent>
     </Card>

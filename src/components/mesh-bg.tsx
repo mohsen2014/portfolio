@@ -19,7 +19,7 @@ function MeshGB({children}: {children?: React.ReactNode}) {
       }
     }, []);
   return (
-    <div id="particle-canvas" className='h-[250px] w-[400px] absolute rounded-full'>
+    <div id="particle-canvas" className='h-[250px] w-[300px] md:w-[400px] px-5 absolute rounded-full'>
     </div>
   )
 }

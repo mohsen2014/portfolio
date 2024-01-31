@@ -23,11 +23,11 @@ export default function Home() {
           <div className='min-h-[550px] md:min-w-[1000px] w-full'>
               <div className='h-[400] w-full md:justify-around md:flex-row flex flex-col items-center gap-20 '>
                 <Image  src="/portfolio/me.jpg" className='rounded-full w-[400px] h-[400px] object-cover' width={400} height={400} alt='mohsen emami'></Image>
-                <div className="flex flex-col gap-3 items-start justify-center h-full">
+                <div className="flex flex-col gap-3 items-center md:items-start justify-center h-full">
                   <MeshGB/>
                   <div className='text-sm text-gray-900'>Hello, I`m</div> 
-                  <h1 className='text-5xl font-bold'>Mohsen Emami</h1>
-                  <h2 className='text-4xl font-extrabold text-gray-700'>Front End Developer</h2>
+                  <h1 className='text-4xl md:text-5xl font-bold'>Mohsen Emami</h1>
+                  <h2 className='text-3xl md:text-4xl font-extrabold text-gray-700'>Front End Developer</h2>
                   <div className='flex gap-6 w-full mt-6 justify-center text-3xl font-medium z-10'>
                     <Button variant={'outline'} asChild className='text-xl p-3 rounded-xl flex gap-2 justify-center  hover:bg-gray-800 hover:text-white' onClick={()=>{}}>
                       <Link href='/Resume.pdf'><AiOutlineFilePdf /> Download CV</Link> 

@@ -12,8 +12,8 @@ function ExperienceCard({Icon, title, position, children, onHover, years, type}:
     type?: string
 }) {
   return (
-    <Card className='w-full border-gray-300  hover:border-gray-400 hover:bg-gray-100' onMouseEnter={() => onHover && onHover(true)} onMouseLeave={() => onHover && onHover(false)}>
-        <CardHeader>
+    <Card className='w-full border-gray-300  hover:border-gray-400 hover:bg-gray-100 p-2 md:p-6' onMouseEnter={() => onHover && onHover(true)} onMouseLeave={() => onHover && onHover(false)}>
+        <CardHeader className='p-2 md:p-6'>
             <CardTitle className='flex flex-col'>
                 <div className='flex '>
                     <div className="flex capitalize gap-2 w-[75%]">
@@ -34,7 +34,7 @@ function ExperienceCard({Icon, title, position, children, onHover, years, type}:
                 </div>
             </CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className='p-2 md:p-6'>
             {children}
         </CardContent>
     </Card>

@@ -9,8 +9,8 @@ function Section({description, title, children, id}: {
 }) {
   return (
     <div className="relative">
-        <Card className='border-none min-h-80 mt-8' id={id}>
-            <CardHeader>
+        <Card className='border-none min-h-80 mt-8 p-2 md:p-6' id={id}>
+            <CardHeader className='p-2 md:p-6'>
                 <CardDescription className='w-full text-center text-gray-800 text-xl capitalize'>
                     {description}
                 </CardDescription>
@@ -18,7 +18,7 @@ function Section({description, title, children, id}: {
                     {title}
                 </CardTitle>
             </CardHeader>
-            <CardContent className='w-full flex justify-center items-center'>
+            <CardContent className='w-full flex justify-center items-center p-2 md:p-6'>
                 {children}
             </CardContent>
         </Card>
